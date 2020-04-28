@@ -2,11 +2,11 @@ package dtp.userinterface;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.io.IOException;
+//import java.io.IOException;
 
 import javax.swing.JFrame;
 
-import dtp.effect.DataLoader;
+//import dtp.effect.DataLoader;
 
 
 public class GameMain extends JFrame{
@@ -26,11 +26,11 @@ public class GameMain extends JFrame{
 		this.setBounds((dimension.width - SCREEN_WIDTH)/2, (dimension.height - SCREEEN_HEIGHT)/2, SCREEN_WIDTH, SCREEEN_HEIGHT);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		try {
-			DataLoader.getInstance().LoadData();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		// try {
+		// 	//DataLoader.getInstance().LoadData();
+		// } catch (IOException e) {
+		// 	e.printStackTrace();
+		// }
 		
 		gamepanel = new GamePanel();
 		this.add(gamepanel);
